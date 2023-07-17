@@ -2,9 +2,12 @@
   "name": "url-shortening-api-landing-page",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://azurecloud9.github.io/url-shortening-api-landing-page/",
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "build": "vite build",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"

@@ -11,7 +11,10 @@ function App() {
         <Route index element={<Home/>}/>
 
       </Route>
-    )
+    ),
+    {
+      basename: '/url-shortening-api-landing-page',
+    }
   )
 
   return (
