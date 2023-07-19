@@ -9,6 +9,8 @@ export default function UrlShortener() {
     const [error, setError] = useState(false)
     const [urlList, setUrlList] = useState([])
     const [copied, setcopies] = useState(false)
+    const [copiedId, setCopiedId] = useState(null)
+
     let urllink = url
 
 const shortenHandle = () => {
@@ -46,8 +48,12 @@ const shortenHandle = () => {
 
 
 
-const copyHandle = () => {
-    setcopies(!copied)
+const copyHandle = (id, url) => {
+  navigator.clipboard.writeText(url).then(() => {
+    setCopiedId(id); // set copiedId to the copied url's id
+}).catch(err => {
+    console.error('Error:', err);
+});
 }
 
 
@@ -69,11 +75,12 @@ const copyHandle = () => {
              <p className="ml-[16px] ">{list.originalLink}</p>
             </div>
             <p className="ml-[16px] mt-[6px] text-color5" >{list.shortenedUrl}</p>
-            {!copied ? (
-                <div className="w-[295px] h-[40px] ml-[16px] mt-[8px] bg-color5 text-color1 text-[16px] flex justify-center items-center" onClick={copyHandle}> copy</div>
+            {copiedId !== list.id ? (
+                <div className="w-[295px] h-[40px] ml-[16px] mt-[8px] bg-color5 text-color1 text-[16px] flex justify-center items-center" onClick={() => copyHandle(list.id, list.shortenedUrl)}> copy</div>
             ): (
-                <div className="w-[295px] h-[40px] ml-[16px] mt-[8px] bg-color3 text-color1 text-[16px] flex justify-center items-center" onClick={copyHandle}> copied</div>
+                <div className="w-[295px] h-[40px] ml-[16px] mt-[8px] bg-color3 text-color1 text-[16px] flex justify-center items-center" onClick={() => copyHandle(list.id, list.shortenedUrl)}> copied</div>
             )}
+
             </div>
         ))}
     </div>
