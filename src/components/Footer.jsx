@@ -1,3 +1,7 @@
+import fb from '../assets/icon-facebook.svg'
+import twit from '../assets/icon-twitter.svg'
+import pin from '../assets/icon-pinterest.svg'
+import insta from '../assets/icon-instagram.svg'
 
 export default function Footer() {
   return (
@@ -23,6 +27,12 @@ export default function Footer() {
             <p className="mb-[10px] text-color2">Our Team</p>
             <p className=" mb-[10px] text-color2">Careers</p>
             <p className=" text-color2">Contact</p>
+      </div>
+      <div className="flex w-[168px] justify-evenly">
+        <img src={fb} alt='pic'></img>
+        <img src={twit} alt='pic'></img>
+        <img src={pin} alt='pic'></img>
+        <img src={insta} alt='pic'></img>
 
       </div>
     </div>

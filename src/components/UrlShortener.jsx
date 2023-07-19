@@ -11,7 +11,6 @@ export default function UrlShortener() {
     const [copied, setcopies] = useState(false)
     const [copiedId, setCopiedId] = useState(null)
 
-    let urllink = url
 
 const shortenHandle = () => {
   if(url !== '') {
