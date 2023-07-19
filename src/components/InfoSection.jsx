@@ -7,7 +7,7 @@ import img3 from '../assets/icon-fully-customizable.svg'
 export default function InfoSection() {
   return (
     <div className='w-[100vw] flex flex-col justify-center items-center pt-[54px] relative bg-color1'>
-        <h1 className='text-center mb-[16px] text-color4 text-[28px] '>Advanced Statistics</h1>
+        <h1 className='text-center font-bold mb-[16px] text-color4 text-[28px] '>Advanced Statistics</h1>
         <p className='text-center mb-[92px] text-color2 ' >Track how your links are performing<br></br> across the web with our advanced<br></br> statistics dashboard.</p>
         <div className='w-[327px] h-[267px] mb-[92px] relative flex flex-col  justify-start items-center bg-white'>
             <div className='w-[88px] h-[88px]  flex justify-center items-center bg-color3 rounded-full z-50 mt-[-40px]'>
