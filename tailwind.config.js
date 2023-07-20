@@ -13,7 +13,9 @@ export default {
         'color4': '#3A3054',
         'color5': '#2BD0D0',
         'color6': '#34313D',
-        'color7': '#EFF1F7',
+        'color7': '#9AE3E3',
+        'color8': '#2BD0D0',
+
       },
       fontFamily: {
         'poppins': ['Poppins', 'sans-serif'],

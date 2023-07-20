@@ -14,7 +14,8 @@ export default function RootLayout() {
     },[isClicked])
 
   return (
-    <>
+<>
+    <div className=" sm:block lg:hidden">
         <div className="h-[80px] w-[100vw]  flex items-center bg-white justify-between  ">
             <img className="w-[120px] h-[32px] ml-[24px]" src={logo} alt="pic"/>
             <img className="w-[24px] h-[21px] mr-[24px] " src={hamburger} alt="pic1" onClick={hamburgerHandle}/>
@@ -38,7 +39,13 @@ export default function RootLayout() {
             </div>
         ):null}
         <Outlet/>
-    </>
+    </div>
+
+    
+    
+</>
+
+    
     
   )
 }
