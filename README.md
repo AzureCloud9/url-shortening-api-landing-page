@@ -1,6 +1,6 @@
 # My Journey
 
-This repository documents my journey in React.js. Here, I share my struggles, lessons learned, and progress. The purpose is to provide insights into my growth and showcase my development journey to recruiters and others who are interested.
+This repository documents my journey in React.js. Here, I share my struggles, lessons learned, and progress. The purpose is to provide insights into my growth and showcase my development journey to recruiters and others who are interested..
 
 ## Struggles
 - The project wasn't hard to do, if I need to be honest. I fetched from a URL shortener API, which gives me the short link bank in data.
